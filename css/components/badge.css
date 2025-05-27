@@ -9,3 +9,10 @@
   color: #fff;
   font-weight: 600;
 }
+.reddot {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+}

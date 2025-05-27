@@ -30,7 +30,7 @@
   transition: border-color 0.3s ease-in-out;
 }
 #login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--gray);
 }
 #login-form input:focus {
   border-color: var(--main);
@@ -60,12 +60,12 @@
   padding: 15px 0;
   font-size: 18px;
   margin-bottom: 25px;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--gray);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
 }
 .login-form__input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--gray);
 }
 .login-form__input:focus {
   border-color: var(--main);

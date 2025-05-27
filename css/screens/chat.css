@@ -76,3 +76,54 @@
 .message-row--own .message__info {
   flex-direction: row-reverse;
 }
+.keyboard {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+  box-sizing: border-box;
+}
+.keyboard .keyboard__column {
+  position: relative;
+}
+.keyboard .keyboard__column:first-child {
+  width: 10%;
+}
+.keyboard .keyboard__column:last-child {
+  width: 90%;
+}
+.keyboard input {
+  padding: 12px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.keyboard span {
+  opacity: 0.5;
+}
+.keyboard__column:last-child span,
+.keyboard__column:last-child button {
+  position: absolute;
+  right: 4px;
+  top: 3.5px;
+}
+.keyboard__column:last-child span {
+  right: 50px;
+  top: 10px;
+}
+.keyboard__column:last-child button {
+  background-color: var(--main);
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.keyboard__column:last-child button:focus,
+.keyboard__column:last-child button:active {
+  outline: none;
+}

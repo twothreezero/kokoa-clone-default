@@ -15,11 +15,22 @@
 #chat-screen .alt-header {
   top: 10px;
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 .main-chat {
   margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.8s linear;
 }
 .chat__timestamp {
   color: #fff;
@@ -29,6 +40,7 @@
   font-size: 14px;
   border-radius: 22px;
   margin-bottom: 25px;
+  transition: all 0.3s ease-in-out;
 }
 .message-row {
   width: 100%;
@@ -102,6 +114,7 @@
   border: var(--main-border);
   border-radius: 20px;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 .keyboard span {
   opacity: 0.5;
@@ -127,3 +140,20 @@
 .keyboard__column:last-child button:active {
   outline: none;
 }
+.keyboard .keyboard__column:first-child,
+.keyboard .fa-smile-wink,
+.keyboard button {
+  transition: opacity 0.3s ease-in-out;
+}
+.keyboard:focus-within .keyboard__column:first-child,
+.keyboard:focus-within .fa-face-smile,
+.keyboard:focus-within button {
+  opacity: 0;
+}
+.keyboard input:focus {
+  width: 98vw;
+  transform: translateX(-13%) /* translateY(-80px) */;
+}
+/* .keyboard:focus-within {
+  transform: translateY(80px);
+} */

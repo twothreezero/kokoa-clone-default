@@ -1,3 +1,3 @@
 # Kokoa Clone Default
 
-HTML and CSS
+HTML & CSS

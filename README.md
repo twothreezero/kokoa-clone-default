@@ -2,7 +2,8 @@
 
 > 간단하게 만들어본 카카오톡 클론 코딩입니다.
 
-![메인](./img/chat-default.png)
+![메인](./img/chat-default.png)  
+<a href="https://kokoatalk-clone-ttz.netlify.app/" target="_blank">새 탭에서 열기</a>
 
 ## 주요 작업
 
